@@ -1,0 +1,107 @@
+
+.title1{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.title2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.title3{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.para1{
+    font-size: 16px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Movies Block and Movies Main Style  */
+.movieItem{
+    width: 96%;
+    background-color: whitesmoke;
+    margin: 10px 10px 20px 10px;
+    transition: transform .5s ease;
+}
+.movieItem:hover{
+    cursor: pointer;
+    /* box-shadow: var(--boxShadow);
+    transform: translateY(-10px); */
+    transform: translateY(-0.5rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.movieItem img{
+    width: 100%;
+    height: 360px;
+}
+.movieItem .itemInfo{
+    padding: 10px;
+}
+.movieItem .itemInfo h3.categories2{
+    color: var(--secondaryColor);
+    margin-bottom: 10px;
+}
+.movieItem .itemInfo h3.categories2 span::after{
+    content: ', ';
+}
+.movieItem .itemInfo h3.categories2 span:hover{
+    color: var(--secondaryColorHover);
+    cursor: pointer;
+}
+
+/* Global Buttons Styles  */
+.btn1, .btn2{
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 2px solid var(--primaryColor);
+    background: #fff;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: .6s ease;
+    cursor: pointer;
+    }
+    .btn1 span, .btn2 span{
+    background: var(--primaryColor);
+    width: 200%;
+    height: 202%;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    border-radius: 50%;
+    z-index: -1;
+    transition: .6s;
+    transform: translateX(10%);
+    }
+    .btn1:hover{
+        color: var(--primaryColor);
+    }
+    .btn1:hover span{
+        height: 100%;
+    }
+    .btn2{
+        color: var(--primaryColor);
+        background: var(--primaryColor);
+    }
+    .btn2 span{
+        background: #fff;
+    }
+    .btn2:hover{
+        color: #fff;
+    }
+    .btn2:hover span{
+        height: 100%;
+    }
+
+
+
+
