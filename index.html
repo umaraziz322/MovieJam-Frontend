@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="fontawesome5/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+    <title>Movie Jam | Project By Umar Aziz</title>
+
+    <!-- Style Sheet Link  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!-- Slider Links -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/lightslider.css">
+	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+	<script type="text/javascript" src="js/lightslider.js"></script>
+
+    <!-- Main javascript Link  -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="topHeader">
+            <div class="topMenu">
+                <nav>
+                    <ul>
+                        <li class="herosBtn" id="heroDown">How To Download?</li>
+                        <li class="herosBtn" id="heroShare">Share</li>
+                        <li class="herosBtn" id="heroReq">Request A Movie</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="topSearch">
+                <div class="searchField">
+                    <i class="fas fa-search"></i>
+                    <input type="search" name="search" id="topSearch1" placeholder="Search">
+                </div>
+            </div>
+        </div>
+
+        <div class="secondaryHeader">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">Movie Jam</a>
+                </div>
+                <div class="mainMenu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Movies</a></li>
+                            <li class="subMenu"><a href="#">Geners <i class="fas fa-caret-down"></i></a>
+                                <div class="dropdown">
+                                    <a href="#" class="dropItem">Action</a>
+                                    <a href="#" class="dropItem">Thriller</a>
+                                    <a href="#" class="dropItem">Romantic</a>
+                                    <a href="#" class="dropItem">Comedy</a>
+                                    <a href="#" class="dropItem">Sci-Fi</a>
+                                    <a href="#" class="dropItem">Fantasy</a>
+                                </div>
+                            </li>
+                            <li><a href="#">Tv Series</a></li>
+                            <li><a href="#">Featured</a></li>
+                            <li><a href="#">Actors</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Overlays of Top Header Link Buttons  -->
+    <section id="heroOverlays">
+        <div class="heroDownload">
+            <div class="container">
+                <h3 class="title2 heroTitle">How To Download?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga reprehenderit officia ducimus perspiciatis excepturi, amet distinctio eum et, nam accusantium, sunt aut at sapiente? Quidem itaque molestiae voluptatem id.</p>
+                <button class="btn2 heroHomeBtn"><span></span>Go To Home Page</button>
+            </div>
+        </div>
+
+        <div class="heroShare">
+            <div class="container">
+                <h3 class="title2 heroTitle">Share The Site on Social Media</h3>
+                <div class="heroSocialIcons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <button class="btn2 heroHomeBtn"><span></span>Go To Home Page</button>
+            </div>
+        </div>
+
+        <div class="heroRequest">
+            <div class="container">
+                <h3 class="title2 heroTitle">Share The Site on Social Media</h3>
+                <div class="heroForm">
+                    <input type="text" name="fName" placeholder="Full Name* (John Paul)" required>
+                    <input type="email" name="email" placeholder="Email* (johnpaul@gmail.com)" required>
+                    <input type="text" name="heroMovieName" placeholder="Name of The Movie* (Titanic, Avengers...)">
+                    <textarea name="heroNote" rows="4" placeholder="Add Any Note"></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+                <button class="btn2 heroHomeBtn"><span></span>Go To Home Page</button>
+            </div>
+        </div>
+    </section>
+
+
+    <main>
+        <!-- Main Big Movies Franchises Main Site Slider  -->
+        <section id="movieSlider">
+            <div class="container">
+                <ul id="autoWidth" class="cs-hidden">
+                    <li class="item-a">
+                        <div class="box">
+                            <p class="title">Marvel</p>
+                            <img src="images/sliderImages/marvel1.png" class="poster">
+                            <div class="detailes">
+                                <!-- <p class="franchie">Marvel</p> -->
+                                <p class="catagory"><a href="#">Action</a><a href="#">Superhero</a></p>
+                                <p class="news">Marvel Cinematic Unverse is the Most Grossing Franchises in the world right now.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <p class="title">DC Universe</p>
+                            <img src="images/sliderImages/dc1.jpg" class="poster">
+                            <div class="detailes">
+                                <!-- <p class="franchie">Marvel</p> -->
+                                <p class="catagory"><a href="#">Action</a><a href="#">Superhero</a></p>
+                                <p class="news">DC is another comic and superhero movies franchise which is in compitition with Marvel.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <p class="title">Star-Wars</p>
+                            <img src="images/sliderImages/starwars1.jpg" class="poster">
+                            <div class="detailes">
+                                <!-- <p class="franchie">Starwars</p> -->
+                                <p class="catagory"><a href="#">Action</a><a href="#">Alien</a></p>
+                                <p class="news">Starwars is the most oldest and popular franchise in the world. Their subject is space.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <p class="title">Fast And Furious</p>
+                            <img src="images/sliderImages/fastandfurious1.jpg" class="poster">
+                            <div class="detailes">
+                                <!-- <p class="franchie">Disney</p> -->
+                                <p class="catagory"><a href="#">Adventure</a><a href="#">Fantasy</a></p>
+                                <p class="news">Fast and Furious is an racing action movies franchise, produce more than 10 movies. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <p class="title">Harry Potter</p>
+                            <img src="images/sliderImages/harrypotter1.jpg" class="poster">
+                            <div class="detailes">
+                                <!-- <p class="franchie">DC Universe</p> -->
+                                <p class="catagory"><a href="#">Fantasy</a><a href="#">Drama</a></p>
+                                <p class="news">Harry Potter is the most popular movie series in fans and recently its extension released.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-a">
+                        <div class="box">
+                            <p class="title">Pirates of Caribian</p>
+                            <img src="images/sliderImages/pirates1.jpg" class="poster">
+                            <div class="detailes">
+                                <!-- <p class="franchie">DC Universe</p> -->
+                                <p class="catagory"><a href="#">Fantasy</a><a href="#">Adventue</a></p>
+                                <p class="news">It is an DC franchise which produce 6 Amazing adventures.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Latest Movies  -->
+        <section id="latest">
+            <div class="container">
+                <h1 class="title1">Latest Movies</h1>
+                <div class="moviesBlock">
+                    <div class="movieItem">
+                        <img src="images/posters/maladin.jpg" alt="Aladin 2019">
+                        <div class="itemInfo">
+                            <h3 class="categories2"><span>Fantasy</span><span>Comedy</span></h3>
+                            <h2 class="title2 movieTitle">Aladdin (2019) Full Movie 480p, 720p HD</h2>
+                        </div>
+                    </div>
+
+                    <div class="movieItem">
+                        <img src="images/posters/mjacksparrow.jpg" alt="Jack Sparrow Pirates">
+                        <div class="itemInfo">
+                            <h3 class="categories2"><span>Fantasy</span><span>Comedy</span></h3>
+                            <h2 class="title2 movieTitle">Pirates of Carribean (2019) Full Movie 480p, 720p HD</h2>
+                        </div>
+                    </div>
+
+                    <div class="movieItem">
+                        <img src="images/posters/mkongvsgodzilla.jpg" alt="Kong v Godzilla 2021">
+                        <div class="itemInfo">
+                            <h3 class="categories2"><span>Fantasy</span><span>Action</span></h3>
+                            <h2 class="title2 movieTitle">Kong V Godzilla (2021) Full Movie 480p, 720p HD</h2>
+                        </div>
+                    </div>
+
+                    <div class="movieItem">
+                        <img src="images/posters/mtenet.jpg" alt="Tenet 2020">
+                        <div class="itemInfo">
+                            <h3 class="categories2"><span>Thriller</span><span>Action</span></h3>
+                            <h2 class="title2 movieTitle">Tenet (2020) Full Movie 480p, 720p HD</h2>
+                        </div>
+                    </div>
+
+                    <div class="movieItem">
+                        <img src="images/posters/mspiderman.jpg" alt="Spider-man 2019">
+                        <div class="itemInfo">
+                            <h3 class="categories2"><span>Fantasy</span><span>Comedy</span></h3>
+                            <h2 class="title2 movieTitle">Spider-Man: Far From Home (2019) Full Movie 480p, 720p HD</h2>
+                        </div>
+                    </div>
+
+                    <div class="movieItem">
+                        <img src="images/posters/mjoker.jpg" alt="Joker 2019">
+                        <div class="itemInfo">
+                            <h3 class="categories2"><span>Fantasy</span><span>Comedy</span></h3>
+                            <h2 class="title2 movieTitle">Joker (2019) Full Movie 480p, 720p HD</h2>
+                        </div>
+                    </div>
+
+                    <div class="movieItem">
+                        <img src="images/posters/mstarwars2.png" alt="Star Wars 2017">
+                        <div class="itemInfo">
+                            <h3 class="categories2"><span>Fantasy</span><span>Action</span></h3>
+                            <h2 class="title2 movieTitle">Starwars: Force Awakens (2017) Full Movie 480p, 720p HD</h2>
+                        </div>
+                    </div>
+
+                    <div class="movieItem">
+                        <img src="images/posters/mbatman.jpg" alt="Batman 2008">
+                        <div class="itemInfo">
+                            <h3 class="categories2"><span>Fantasy</span><span>Action</span></h3>
+                            <h2 class="title2 movieTitle">Batman: The Dark Knight (2008) Full Movie 480p, 720p HD</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagenationBlock">
+                    <div class="pagesNumbers">
+                        <button class="pageBtn">Previous</button>
+                        <button class="pageBtn">1</button>
+                        <button class="pageBtn">2</button>
+                        <button class="pageBtn">3</button>
+                        <span class="pageDots">...</span>
+                        <button class="pageBtn">Last</button>
+                        <button class="pageBtn">Next</button>
+                    </div>
+                    <div class="mainPages">
+                        <button class="mainPageBtn">View All</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Geners Section  -->
+        <section id="genersMovies">
+            <div class="container">
+                <h1 class="title1">Top Geners</h1>
+                <div class="genersArea">
+                    <div class="genersMenu">
+                        <button class="gMenuItem" id="gAction">Action</button>
+                        <button class="gMenuItem" id="gThriller">Thriller</button>
+                        <button class="gMenuItem" id="gRomantic">Romantic</button>
+                        <button class="gMenuItem" id="gComedy">Comedy</button>
+                        <button class="gMenuItem" id="gFantasy">Fantasy</button>
+                        <button class="gMenuItem" id="gScifi">Sci-Fi</button>
+                    </div>
+                    <div class="genersContent">
+                        <div class="gActionMovies gMovies">
+                            <div class="gMovieItem">
+                                <img src="images/posters/maladin.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Aladdin (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mavengers.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Avengers: Endgame (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mloki.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Thor: Rangnarok (2017) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mrampage.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Rampage (2018) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gThrillerMovies gMovies">
+                            <div class="gMovieItem">
+                                <img src="images/posters/mkongvsgodzilla.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Kong V Godzilla (2021) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mblackwidow.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Black Widow (2021) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mbatman.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Batman: The Dark Knight (2008) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mstarwars.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Starwars: Last Jedi (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gRomanticMovies gMovies">
+                            <div class="gMovieItem">
+                                <img src="images/posters/msuperman.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Man of Steel (2016) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mlionking.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Lion King (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/maladin.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Aladdin (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mstarwars4.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Starwars: Last Jedi (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gComedyMovies gMovies">
+                            <div class="gMovieItem">
+                                <img src="images/posters/mblackpanther.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Black Panther (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mblackwidow.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Black Widow (2021) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/maladin.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Aladdin (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mstarwars3.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Starwars: Last Jedi (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gFantasyMovies gMovies">
+                            <div class="gMovieItem">
+                                <img src="images/posters/mjacksparrow.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Pirates of Caribean (2017) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mlionking.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Lion King (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/maladin.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Aladdin (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mstarwars4.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Starwars: Last Jedi (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gScifiMovies gMovies">
+                            <div class="gMovieItem">
+                                <img src="images/posters/msuperman.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Man of Steel (2016) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mspiderman.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Spiderman: Far From Home (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mtenet.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Tenet (2020) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                            <div class="gMovieItem">
+                                <img src="images/posters/mstarwars.jpg" alt="Aladin 2019">
+                                <div class="gItemInfo">
+                                    <h3 class="title2">Starwars: Last Jedi (2019) Full Movie 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tv Series Section  -->
+        <section id="tvSeries">
+            <div class="container">
+                <h1 class="title1">Tv Series</h1>
+                <div class="seriesBlock">
+                    <div class="movieItem">
+                        <img src="images/tvseries/gameofthrones.png" alt="Tv Series">
+                        <div class="itemInfo">
+                            <h2 class="title2 movieTitle">Game of Thrones All Seasons 480p, 720p HD</h2>
+                        </div>
+                    </div>
+                    <div class="movieItem">
+                        <img src="images/tvseries/strangerthings.jpg" alt="Tv Series">
+                        <div class="itemInfo">
+                            <h2 class="title2 movieTitle">Stranger Things All Seasons 480p, 720p HD</h2>
+                        </div>
+                    </div>
+                    <div class="movieItem">
+                        <img src="images/tvseries/theboys.jpeg" alt="Tv Series">
+                        <div class="itemInfo">
+                            <h2 class="title2 movieTitle">The Boys All Seasons 480p, 720p HD</h2>
+                        </div>
+                    </div>
+                    <div class="movieItem">
+                        <img src="images/tvseries/moneyheist.jpg" alt="Tv Series">
+                        <div class="itemInfo">
+                            <h2 class="title2 movieTitle">Money Heist All Seasons 480p, 720p HD</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagenationBlock">
+                    <div class="pagesNumbers">
+                        <button class="pageBtn">Previous</button>
+                        <button class="pageBtn">1</button>
+                        <button class="pageBtn">2</button>
+                        <button class="pageBtn">3</button>
+                        <span class="pageDots">...</span>
+                        <button class="pageBtn">Last</button>
+                        <button class="pageBtn">Next</button>
+                    </div>
+                    <div class="mainPages">
+                        <button class="mainPageBtn">View All</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured ovies Slider Section  -->
+        <section id="featuredMovies">
+            <div class="container">
+                <h2 class="title1">Featured</h2>
+                <div class="feContainer">
+                    <ul id="autoWidth2" class="cs-hidden feSlider">
+                        <li class="item-a">
+                            <div class="box">
+                                <img src="images/posters/mblackwidow.jpg" class="poster">
+                                <div class="detailes">
+                                    <h3 class="title2 feTitle">Black Widow (2021) Full Movies 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box">
+                                <img src="images/posters/mironman.jpg" class="poster">
+                                <div class="detailes">
+                                    <h3 class="title2 feTitle">Iron Man (2007) Full Movies 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box">
+                                <img src="images/posters/mtenet.jpg" class="poster">
+                                <div class="detailes">
+                                    <h3 class="title2 feTitle">Tenet (2020) Full Movies 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box">
+                                <img src="images/posters/msuperman.jpg" class="poster">
+                                <div class="detailes">
+                                    <h3 class="title2 feTitle">Men of Steel (2017) Full Movies 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box">
+                                <img src="images/posters/mloki.jpg" class="poster">
+                                <div class="detailes">
+                                    <h3 class="title2 feTitle">Loki (2021) Full Movies 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box">
+                                <img src="images/posters/mlionking.jpg" class="poster">
+                                <div class="detailes">
+                                    <h3 class="title2 feTitle">Lion King (2019) Full Movies 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-a">
+                            <div class="box">
+                                <img src="images/posters/mrampage.jpg" class="poster">
+                                <div class="detailes">
+                                    <h3 class="title2 feTitle">Rampage (2018) Full Movies 480p, 720p HD</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actors & Actress Section  -->
+        <section id="movieActors">
+            <div class="container">
+                <h2 class="title1 actorsTitle">Actors & Actress</h2>
+                <div class="maleActors">
+                    <div class="actorBox">
+                        <img src="images/actors/leonardodicaprio.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Leonardo Dicaprio</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/denzelwashington.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Denzel Washington</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/tomcruise.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Tom Cruise</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/dwaynejohnson.jpeg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Dwayne Johnson</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/willsmith.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Will Smith</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/bradpitt.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Brad Pitt</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="femaleActors">
+                    <div class="actorBox">
+                        <img src="images/actors/merylstreep.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Meryl Streep</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/jenniferlawrence.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Jennifer Lawrence</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/charlizetheron.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Charlize theron</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/natlieportman.jpeg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Natlie Portman</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/katwinslet.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Kat Winslet</h4>
+                        </div>
+                    </div>
+                    <div class="actorBox">
+                        <img src="images/actors/amyadams.jpg" alt="Actor Profile">
+                        <div class="actorInfo">
+                            <h4 class="title3">Amy Adams</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagenationBlock">
+                    <div class="pagesNumbers">
+                        <button class="pageBtn">Previous</button>
+                        <button class="pageBtn">1</button>
+                        <button class="pageBtn">2</button>
+                        <button class="pageBtn">3</button>
+                        <span class="pageDots">...</span>
+                        <button class="pageBtn">Last</button>
+                        <button class="pageBtn">Next</button>
+                    </div>
+                    <div class="mainPages">
+                        <button class="mainPageBtn">View All</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top of the Week By IMDBs, Popular on Site, Tv Series Section  -->
+        <section id="topofWeek">
+            <div class="container">
+                <h2 class="title1 twTitle">Top of The Week</h2>
+                <div class="twWrapper">
+                    <!-- IMDB Section  -->
+                    <div class="twBlock imdbs">
+                        <h3 class="title2 twBlockTitle">Top On IMBD</h3>
+                        <div class="twBlockContainer">
+                            <div class="twItem">
+                                <img src="images/posters/mbatman.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Batman: the Dark Knight (2008) Full Movie</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/posters/mlionking.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">The lion King (2019) Full Movie</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/posters/mtenet.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Tenet (2020) Full Movie</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/posters/mjoker.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Joker (2019) Full Movie</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/posters/mkongvsgodzilla.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Godzilla Vs Kong (2021) Full Movie</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Popular On Site Section  -->
+                    <div class="twBlock popularOnSite">
+                        <h3 class="title2 twBlockTitle">Popular</h3>
+                        <div class="twBlockContainer">
+                            <div class="twItem">
+                                <img src="images/posters/mblackwidow.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Black Widow (2021) Full Movie</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/posters/mavengers.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Avengers: Endgame (2019) Full Movie</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/posters/mjacksparrow.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Pirates of The Carribean (2017) Full Movie</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/posters/mspiderman.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Spiderman: Far From Home (2018) Full Movie</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/posters/mstarwars2.png" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Star-Wars: Force Awakens (2017) Full Movie</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tv Series Section  -->
+                    <div class="twBlock topTvseries">
+                        <h3 class="title2 twBlockTitle">Top Tv Series</h3>
+                        <div class="twBlockContainer">
+                            <div class="twItem">
+                                <img src="images/tvseries/moneyheist.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Money Heist Complete All Seasons</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/tvseries/strangerthings.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Stranger Things Complete All Seasons</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/tvseries/thewitcher.jpg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">The Witchers Complete All Seasons</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/tvseries/gameofthrones.png" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">Game of Thrones Complete All Seasons</h4>
+                                </div>
+                            </div>
+                            <div class="twItem">
+                                <img src="images/tvseries/theboys.jpeg" alt="Top of The Week Item" class="twImage">
+                                <div class="twItemInfo">
+                                    <h4 class="title3">The Boys Complete All Seasons</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials, Users Review Section  -->
+        <section id="testimonials">
+            <div class="container">
+                <h2 class="title1 testimonialsTitle">User Reviews</h2>
+                <div class="testimonnialMsg">
+                    <p class="testMsg">People visit our site everyday and share their thoughts with us.</p>
+                    <button class="btn1 testimonialBtn"><span></span>Add Your Review</button>
+                </div>
+                <div class="userReviews">
+                    <ul id="autoWidth3" class="cs-hidden">
+                        <li class="item-a">
+                            <div class="reviewBox box">
+                                <div class="userInfo">
+                                    <img src="images/testimonials/t1.jpg" alt="User Testimonials" class="userAvatar">
+                                    <div class="info">
+                                        <h4 class="title4">Alex Cole</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star dislikeStar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="userComment">
+                                    <p class="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda beatae iusto consectetur ea debitis nisi odit commodi eius aliquid magnam.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item-a">
+                            <div class="reviewBox box">
+                                <div class="userInfo">
+                                    <img src="images/testimonials/t7.jpg" alt="User Testimonials" class="userAvatar">
+                                    <div class="info">
+                                        <h4 class="title4">June Taylor</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star dislikeStar"></i>
+                                            <i class="fas fa-star dislikeStar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="userComment">
+                                    <p class="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda beatae iusto consectetur ea debitis nisi odit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item-a">
+                            <div class="reviewBox box">
+                                <div class="userInfo">
+                                    <img src="images/testimonials/t6.jpg" alt="User Testimonials" class="userAvatar">
+                                    <div class="info">
+                                        <h4 class="title4">Nathan White</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="userComment">
+                                    <p class="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda beatae iusto consectetur ea debitis nisi odit commodi eius.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item-a">
+                            <div class="reviewBox box">
+                                <div class="userInfo">
+                                    <img src="images/testimonials/t3.jpg" alt="User Testimonials" class="userAvatar">
+                                    <div class="info">
+                                        <h4 class="title4">Haily Smith</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star dislikeStar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="userComment">
+                                    <p class="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda beatae iusto consectetur ea debitis nisi odit commodi eius.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item-a">
+                            <div class="reviewBox box">
+                                <div class="userInfo">
+                                    <img src="images/testimonials/t5.jpg" alt="User Testimonials" class="userAvatar">
+                                    <div class="info">
+                                        <h4 class="title4">James Willis Jr.</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star likeStar"></i>
+                                            <i class="fas fa-star dislikeStar"></i>
+                                            <i class="fas fa-star dislikeStar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="userComment">
+                                    <p class="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Movie Jam</a>
+            </div>
+            <div class="footerSocial">
+                <h3>Follow Us</h3>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy;2021 All rights reserved | This template is made by <a href="#">Umar Aziz.</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
